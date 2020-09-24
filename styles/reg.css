@@ -1,0 +1,21 @@
+body{
+    font-family: 'Gill Sans';
+    font-weight: 400;
+    background-image:url(images/food7.jpg);
+    color: indianred;
+    letter-spacing: 0.5px;
+    line-height: 10px;
+    border:1px solid black;
+    padding: 20px;
+    
+    
+ }
+
+ p{
+     font-size: medium;
+     color: crimson;
+ }
+
+
+
+

@@ -1,0 +1,27 @@
+
+body{
+    font-family: 'Lucida Sans';
+    color:aliceblue;
+    background-image: url(images/food2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+    
+
+}
+.box{  
+    width:600px;  
+    float:right;
+    border:1px solid brown;
+}
+.box ul li{
+    width:120px;
+    float:left;
+    margin:10px auto;
+    text-align: center;
+}
+.box ul li a{
+    text-decoration: none;
+    color: blue;
+   
+}
