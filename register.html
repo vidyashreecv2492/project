@@ -1,9 +1,33 @@
 <html>   
    <head>
       <title>Form Validation</title>     
-      <link rel="stylesheet"  href="styles/reg.css">
+     
+         <style>
+         body{
+               font-family: cursive;
+                 color:aliceblue;
+                   background-image: url("images/food6.jpg");
+                   background-repeat: no-repeat;
+                      background-size: cover; 
+                   background-position: center;
+   
+    
+    }
+    p{
+     font-size: 50px;
+     color: lightgoldenrodyellow;
+     text-align: left;
+     
+ }
+ table{
+    font-size: 25px;
+    font: outline;
+    text-shadow: rgb(214, 205, 205);
+ }
+ 
 
-         <script type = "text/javascript">
+    </style>
+    <script>
          
       function validate() {
       
@@ -62,35 +86,36 @@
    </head>
    
    <body>
-      <p>REGISTER!</p>
+      <div>
+      <p style="text-size-adjust: 10px;"> WELCOME!</p>
       <form action = "book.html" name = "myForm" onsubmit = "return(validate());">
-         <table cellspacing = "2" cellpadding = "2" >
+         <table style="text-shadow: lightyellow; line-height-step: 20px;" >
             
             <tr>
-               <td align = "right">Name</td>
+               <td align = "left">Name:</td>
                <td><input type = "text" name = "name" /></td>
-            </tr>
+            </tr><br>
             
             <tr>
-               <td align = "right">EMail</td>
+               <td align = "leftt">EMail:</td>
                <td><input type = "text" name = "email" /></td>
             </tr>
             
             <tr>
-               <td align = "right">Phone Number</td>
+               <td align = "leftt">Phone Number:</td>
                <td><input type = "number" name = "phone" /></td>
             </tr>
             <tr>
-                <td align = "right">Date</td><br><br>
+                <td align = "left">Date:</td>
                 <td><input type = "date" name = "date" /></td>
              </tr>
              <tr>
-                <td align = "right">Time<br></td>
+                <td align = "left">Time:<br></td>
                 <td><input type = "time" name = "time" /></td>
              </tr>
             
             <tr>
-               <td align = "right">Number Of People<br></td>
+               <td align = "leftt">Number Of People:<br></td>
                <td>
                   <select name = "people">
                      <option value = "-1" selected>[Select]</option>
@@ -106,11 +131,12 @@
             </tr>
             
             <tr>
-               <td align = "right"></td>
+               <td align = "left"></td>
                <td><input type = "submit" value = "Submit" /></td>
             </tr>
             
          </table>
-      </form>      
+      </form>    
+      </div>  
    </body>
 </html>
