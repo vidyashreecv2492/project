@@ -1,0 +1,116 @@
+<html>   
+   <head>
+      <title>Form Validation</title>     
+      <link rel="stylesheet"  href="styles/reg.css">
+
+         <script type = "text/javascript">
+         
+      function validate() {
+      
+      if( document.myForm.name.value == "") {
+         alert( "Enter your name" );
+         document.myForm.name.focus() ;
+         return false;
+      }
+      if( document.myForm.email.value == "" ) {
+         alert( "Enter Email id" );
+         document.myForm.EMail.focus() ;
+         return false; 
+      }var emailID = document.myForm.email.value;
+      atpos = emailID.indexOf("@");
+      dotpos = emailID.lastIndexOf(".");
+      if (atpos < 1 || ( dotpos - atpos < 2 )) {
+         alert("Please enter correct email ID")
+         document.myForm.email.focus() ;
+         return false;
+      }
+      
+      if( document.myForm.phone.value == "" || isNaN( document.myForm.phone.value ) ||
+         document.myForm.Zip.value.length != 10 ) {
+         
+         alert( "Enter phone number" );
+         document.myForm.Zip.focus() ;
+         return false;
+      }
+      if( document.myForm.date.value == "" || isNaN( document.myForm.date.value ) ) {
+         
+         alert( "Select date" );
+         document.myForm.Zip.focus() ;
+         return false;
+      }
+      if( document.myForm.time.value == "" || isNaN( document.myForm.time.value ) ) {
+         
+         alert( "Select time" );
+         document.myForm.Zip.focus() ;
+         return false;
+      }
+      if( document.myForm.people.value == "-1" ) {
+         alert( "Select number of people" );
+         return false;
+      }
+      return( true );
+   }
+
+                           
+    
+       
+        
+
+
+
+      </script>      
+   </head>
+   
+   <body>
+      <p>REGISTER!</p>
+      <form action = "book.html" name = "myForm" onsubmit = "return(validate());">
+         <table cellspacing = "2" cellpadding = "2" >
+            
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "name" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">EMail</td>
+               <td><input type = "text" name = "email" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Phone Number</td>
+               <td><input type = "number" name = "phone" /></td>
+            </tr>
+            <tr>
+                <td align = "right">Date</td><br><br>
+                <td><input type = "date" name = "date" /></td>
+             </tr>
+             <tr>
+                <td align = "right">Time<br></td>
+                <td><input type = "time" name = "time" /></td>
+             </tr>
+            
+            <tr>
+               <td align = "right">Number Of People<br></td>
+               <td>
+                  <select name = "people">
+                     <option value = "-1" selected>[Select]</option>
+                     <option value = "1">1</option>
+                     <option value = "2">2</option>
+                     <option value = "4">4</option>
+                     <option value = "5">5</option>
+                     <option value = "6">6</option>
+                     <option value = "7">7</option>
+
+                  </select>
+               </td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>      
+   </body>
+</html>
